@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	div {
+		padding:10px; background-color:#EEEEEE;
+	}
+
+
+
+</style>
+<script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(document).ready(function(){
+		 //label 다음의 input의 요소와 형제 수준이 동일한 요소를 찾는다.
+	     $("label ~ input").css("border","1px solid #ff0000");
+
+	});
+
+
+});
+
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<p>Next Adjacent Selector</p>
+	<div>
+	     <form>
+	   	<label>Name: </label>
+		<input name="name" />
+		<input name="none" />
+		<fieldset>
+			<label>Newsletter: </label>
+			<input name="newsletter" />
+		</fieldset>
+	     </form>
+	     <input name="none" />
+	</div>
+
+</body>
+</html>

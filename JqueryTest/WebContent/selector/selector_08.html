@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	div,span {
+	     width:150px; height:40px; float:left; padding:10px; margin:10px; background-color:#EEEEEE;
+	}
+
+
+</style>
+<script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    //name속성 값이 my로 시작하는 div 태그의 배경색을 노란색  
+    $("div[name^='my']").css("background","yellow");
+    //name속성 값이 min으로 끝나는 div 태그의 배경색을 핑크색  
+    $("div[name$='min']").css("background","pink");
+});
+
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<div name="my name is hong">name="name is hong"</div>
+	<div name="name is jumin">name="name is min"</div>
+	<div name="man">name="man"</div>
+
+</body>
+</html>

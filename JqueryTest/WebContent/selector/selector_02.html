@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	div,span{
+		width: 40px;
+		height: 40px;
+		background-color: #EEEEEE;
+	}
+
+</style>
+<script type="text/javascript" src="/js/jquery-2.0.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//ID가 Content인 요소를 찾아 배경을 yellow로 변경한다.
+		$("#content").css("background","yellow");
+	});	
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h2> jQuery 시작 Selector</h2>
+	<p>jQuery에 대한 자세한 내용을 보려면 jquery.com을 방문한다.</p>
+	<div>
+		<div id="content">
+			이 부분은 ID값이 content 이다
+		</div>
+	</div>
+</body>
+</html>

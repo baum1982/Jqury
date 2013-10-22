@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	div {
+		padding:10px; background-color:#EEEEEE;
+	}
+
+
+
+</style>
+<script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(document).ready(function(){
+		$("#myid1 > li").css("border","1px solid #ff0000");
+		$("#myid2 li").css("border","1px solid blue");
+	});
+
+
+});
+
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<p>Child & Descendant Selector</p>
+	<div>
+		<ul id="myid1">
+			<li>첫번째</li>
+			<li>
+				<ul>
+					<li>하위1</li>
+					<li>하위2</li>
+				</ul>
+			</li>
+			<li>세번째</li>
+		</ul>
+		
+		<ul id="myid2">
+			<li>첫번째</li>
+			<li>
+				<ul>
+					<li>하위1</li>
+					<li>하위2</li>
+				</ul>
+			</li>
+			<li>세번째</li>
+		</ul>
+	</div>
+</body>
+</html>

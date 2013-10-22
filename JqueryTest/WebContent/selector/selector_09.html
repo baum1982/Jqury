@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	div,span {
+	     width:150px; height:40px; float:left; padding:10px; margin:10px; background-color:#EEEEEE;
+	}
+
+
+</style>
+<script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(document).ready(function(){
+	     //name속성 값이 man을 포함하는div 태그의 배경색을 노란색  
+	     $("div[name*='man']").css("background","yellow");
+	     //name속성 값이 공백과 함께 man과 일치하는 span 태그의 배경색을 노란색  
+	     $("span[name~='man']").css("background","yellow");
+	});
+
+});
+
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<p>div 태그의 name*=man 셀렉터</p>
+	<div name="man">name="man"</div>
+	<div name="superman">name="superman"</div>
+	<div name="iron man">name="iron man"</div>
+	<div name="joker">name="joker"</div>
+	
+	<br><br><br><br>
+	
+	<p>span 태그의 name~=man 셀렉터</p>
+	<span name="man">name="man"</span>
+	<span name="superman">name="superman"</span>
+	<span name="iron man">name="iron man"</span>
+	<span name="joker">name="joker"</span>
+
+
+</body>
+</html>

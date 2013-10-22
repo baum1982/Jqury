@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+	table {
+	     border:1px solid #AAA;}
+	td {
+	     border: 1px solid #AAA; width:25px; height:25px }
+</style>
+
+
+<script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("div")
+		.find("p")
+		.end()
+		.css("border","1px solid red");
+	});	
+</script>
+
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h2> jQuery 시작 Filter</h2>
+	<div>
+		<ul>
+			<li>list item1</li>
+			<li>list item2</li>
+			<li>list item3</li>
+		</ul>
+		<p>this is P in div</p>
+	</div>
+    <p>this is P in div</p>
+
+
+</body>
+</html>

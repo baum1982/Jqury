@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+.annotation {background : pink; }
+</style>
+
+
+<script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$(".annotation").each(function(i) {
+			var idx = i+1;
+			$(this).after("<sup>" + idx + "</sup>");
+		});
+
+		$("input:button").click(function() {
+			alert($(this).val());
+			//$(this).remove();
+		});	
+		var $prev = $("#prevBtn").clone();
+		var $next = $("#nextBtn").clone(true);
+
+		$("div#bottomDiv").prepend($prev);
+		$("div#bottomDiv").append($next);
+	
+		
+		
+	});
+</script>
+
+
+<title>Insert title here</title>
+</head>
+<body>
+	<input type=button id="prevBtn" value="이전" / >
+	<input type=button id="nextBtn" value="다음" / >
+	<div>
+		<b>jQuery</b>는 좋은 <font class="annotation">오픈소스</font> 스크립트이당. UI개발에 도움을 주며
+		 <font class="annotation">트래버스</font>, 이벤트 처리,  <font class="annotation">ajax</font> 상호 작용을 
+		 지원하여 빠른 개발 지원한다. 
+	</div>
+	<br>
+	<div id="bottomDiv"></div>
+
+</body>
+</html>

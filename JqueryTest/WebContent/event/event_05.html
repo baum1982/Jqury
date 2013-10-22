@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+	div { background: #AAA; padding : 10px ; margin:10px ;}
+</style>
+
+
+<script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		var countEnter=0, countLeave=0;
+		$("#mouseArea").bind("mouseenter mouseleave", function(event){
+		   if(event.type == "mouseenter"){
+			countEnter++;
+			$("#spResult").text(countEnter + " mouse enter");
+		   }
+		   else{
+			countLeave++;
+			$("#spResult").text(countLeave + " mouse leave");
+		   }
+		});
+
+	});
+</script>
+
+
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="mouseArea">
+		DIV Area
+		Mouse : <span id="spResult"></span>
+	</div>
+
+</body>
+</html>
